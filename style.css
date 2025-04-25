@@ -29,7 +29,7 @@ header.hero {
   transition: background-image 1s ease-in-out;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 60vw;
   color: white;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,15 @@ header.hero {
   text-align: center;
   padding: 40px;
   position: relative;
+  background-repeat: no-repeat;
+}
+
+
+/* スマホだけ高さを制限 */
+@media (max-width: 768px) {
+  header.hero {
+    height: 40vh; /* または max-height: 400px; とか */
+  }
 }
 
 header.hero::before {
@@ -65,7 +74,7 @@ header.hero p {
 
 
 .cta-wrap {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
 }
 
