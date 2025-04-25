@@ -38,13 +38,6 @@ header.hero {
   text-align: center;
   padding: 40px;
   position: relative;
-  background-repeat: no-repeat;
-  height: 45vh;
-
-  @media (min-width: 1024px) {
-  header.hero {
-    height: 300px;  /* PCでは固定の高さに */
-  }
 }
 
 header.hero::before {
@@ -613,4 +606,3 @@ color: #555;
     display: inline;
   }
 }
-
